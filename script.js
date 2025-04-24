@@ -31,3 +31,28 @@ window.addEventListener('scroll', () => {
       });
     });
   });
+
+
+  const username = "ca2sy"; 
+  const lista = document.getElementById("repositorios-lista");
+
+  fetch(`https://api.github.com/users/${username}/repos`)
+    .then(response => response.json())
+    .then(repos => {
+      repos.forEach(repo => {
+        const a = document.createElement("a");
+        a.href = repo.html_url;
+        a.target = "_blank";
+        a.className = "repositorio-item";
+        a.innerHTML = `
+          <img src="https://i.pinimg.com/736x/da/00/f9/da00f973a0f78acb10af5c0b8fed8b1b.jpg" alt="GitHub" class="repositorio-icon">
+          <br>
+          <span>${repo.name}</span>
+        `;
+        lista.appendChild(a);
+      });
+    })
+    .catch(error => {
+      console.error("Erro ao buscar repositórios:", error);
+      lista.innerHTML = "<p>Não foi possível carregar os repositórios.</p>";
+    });
