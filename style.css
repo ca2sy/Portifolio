@@ -89,7 +89,7 @@ body {
     padding-top: 40px; 
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 70vh;
 
 }
 
@@ -125,7 +125,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 85vh;
+    height: 65vh;
   }
   
   .experiencia .conteudo {
