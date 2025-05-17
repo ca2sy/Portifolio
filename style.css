@@ -1,4 +1,4 @@
-/* Reset e estilo base */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-/* Header */
+
 .header {
   height: 80vh;
   display: flex;
@@ -33,7 +33,6 @@ body {
   text-align: center;
 }
 
-/* Menu de navegação */
 .menu {
   position: fixed;
   top: 0;
@@ -66,7 +65,7 @@ body {
   background-color: rgba(64, 140, 163, 0.1);
 }
 
-/* Seções */
+
 .section {
   background-color: white;
   border-radius: 10px;
@@ -81,26 +80,26 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Sobre */
+
 .sobre {
   padding-top: 40px;
   display: flex;
   flex-direction: column;
-  /* altura removida para permitir expansão natural */
+
 }
 .sobre .conteudo {
   display: flex;
-  flex-wrap: wrap;           /* permite quebra de linha */
-  align-items: flex-start;   /* garante alinhamento superior */
+  flex-wrap: wrap;         
+  align-items: flex-start;   
   gap: 40px;
 }
 .sobre .texto {
-  flex: 1 1 60%;             /* cresce e encolhe conforme o espaço */
-  min-width: 250px;          /* evita ficar muito estreito */
+  flex: 1 1 60%;            
+  min-width: 250px;          
 }
 .sobre .foto {
-  flex: 1 1 300px;           /* base de 300px mas flexível */
-  min-width: 200px;          /* evita ficar muito estreito */
+  flex: 1 1 300px;        
+  min-width: 200px;          
 }
 .sobre .foto img {
   width: 100%;
@@ -108,7 +107,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Experiência */
+
 .experiencia {
   padding: 2rem;
   margin: 2rem auto;
@@ -119,11 +118,11 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* altura removida para conteúdo ajustar */
+
 }
 .experiencia .conteudo {
   display: flex;
-  flex-wrap: wrap;           /* permite quebra de linha */
+  flex-wrap: wrap;          
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
@@ -157,7 +156,7 @@ body {
   line-height: 1.6;
 }
 
-/* Repositórios */
+
 h1, h2 {
   color: #408ca3;
 }
@@ -208,7 +207,7 @@ h1, h2 {
   text-align: center;
 }
 
-/* Tecnologias */
+
 .tecnologias {
   text-align: center;
 }
@@ -235,7 +234,7 @@ h1, h2 {
   transform: scale(1.1);
 }
 
-/* Contato e Footer */
+
 .contato ul, .repositorios ul {
   list-style: none;
   padding: 0;
@@ -272,7 +271,7 @@ h1, h2 {
   margin-top: 15px;
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) {
   .header {
       height: auto;
